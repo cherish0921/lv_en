@@ -1,0 +1,194 @@
+@mixin lr_td{
+    td:first-child{
+        text-align: left;
+    }
+}
+.Investment{
+    background-color:#f5f5f5;
+    font-size: 16px;
+    .mainhead{
+    position: fixed;top: 0;width: 100%;
+    .title{height: 1.17rem;line-height: 1.17rem;background-color:#fff;}
+    .header-list{
+        background-color: #fff;
+        border-bottom:.5px solid #e6e6e6;
+        color:#999;
+        font-size: 14px;
+        height: 1rem;line-height: 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+        li{display: inline-block;}
+        li.nowpage{color: #509FFF; border-bottom: 2px solid #509FFF;}
+        }
+    }
+    .investment-list {
+        margin-top:2.17rem;
+        width: 100%;
+        padding-top:1px;
+        padding-bottom:2rem;
+        .item{
+            margin-top:10px;
+            padding:.2rem .4rem 0 .4rem;
+            background-color:#fff;
+            @include lr_td;
+            .hd_item{border-bottom:1px dashed#E1E1E1; padding-bottom:.1rem;text-align:left;line-height: .9rem;
+            span:first-child{
+                font-size:14px;
+                i{display: inline-block;width: 18px;line-height: 16px;height: 18px;margin-right:4px;padding:1px 3px 0px 3px;border-radius: 4px;background-color: #509fff;color: #fff;font-size: 11px;}
+                i:nth-child(2){width: initial;height:20px;margin-top: .2rem;padding:0 4px;line-height:18px;font-size: 14px; border: 1px solid rgb(80, 159, 255);text-align: center;color: rgb(38, 38, 38);background-color: inherit;border-radius: 3px;}
+                .diya{background-color:#FF8E2E;}
+            
+            } 
+            img{height: .9rem;vertical-align: middle;float:right;}
+            span:nth-child(3){float:right;width:1.73rem;height:.64rem;line-height: .64rem;@include gradient_blue();font-size: 12px;color:#fff;border-radius:2px;text-align: center;}
+            }
+            .ct_item{display:inline-block;width:100%;padding:10px 0 0;
+            .v_item{
+                color:#262626;
+                line-height: 30px;
+                td:first-child{
+                    color:#FD5353;
+                    text-align: left;
+                    width:3rem;
+                    span{font-size: 24px;}
+                }
+                td:nth-child(2){
+                    width:2rem;
+                } 
+                td:nth-child(3){
+                    width:5rem;
+                    text-align:right;
+                  //  float:right;
+                } 
+            }
+            .n_item{margin-top:10px;font-size:12px;color:#999;
+                td:nth-child(3){text-align:right;}
+            }
+        }
+        .pg_item{
+            padding-bottom:20px;text-align: left;
+            .lineout{width:7.6rem;text-align: left;
+            .linein{width:0rem;}
+            }
+            span:last-child{font-size:13px;margin-top:8px;float: right;}
+        }
+        }
+        .itemend{
+            color:#ccc;
+            .ct_item{display:inline-block;width:100%;padding:20px 0;background-image:url('https://s.lendx.vip/static/images/Investment/en_full.png');background-origin:content-box;background-position:right center;background-size:2.08rem 1.44rem;background-repeat: no-repeat;
+                .n_item{color:#ccc;}
+                .v_item{color: #ccc;
+                    td:first-child{color:#FFBBAD;}
+                }
+            }
+        
+        }
+
+
+    }
+    
+    }
+    .iteminfos{
+        .topnav{
+            position:fixed;
+            top: 0;
+            z-index:90;
+            width:100%;
+            color:#fff;
+            background: linear-gradient(to right,(#509fff),(#4886FF));
+            height:40px;
+            line-height:40px; 
+            img{position: absolute;left:.4rem;width:10px;margin-top: 8px;margin-left: .4rem;}
+        }
+        .module2{
+            color:#fff;
+            background:linear-gradient(to right,(#509fff),(#4886FF));
+            margin-bottom:10px;
+            padding-top:40px;
+
+            p:nth-child(1){font-size: 14px;}
+            p:nth-child(2){margin:1rem 0 .5rem 0;font-size: 40px;height:.84rem;}
+            p:nth-child(3){font-size: 12px;margin: .5rem 0 .8rem 0;}
+            .info{display: -webkit-box;display: -ms-flexbox;display: flex;height: 1.6rem;
+                padding: .36rem 0;-ms-flex-pack: distribute;justify-content: space-around;background-color:rgba(0,0,0,.05);
+                div{display:inline-block;width:33%;padding:0;line-height:20px;font-size:14px;box-flex:2;-ms-flex-positive:2;flex-grow:2}
+                div:nth-child(1),div:nth-child(2){border-right: .5px solid rgba(255,255,255,.5);}
+                div:last-child{border-right:0}
+                //display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack: distribute;justify-content: space-around;
+            }
+            .priceing{height:1.07rem;line-height:1.07rem;color:#509FFF;background-color:#E5F1FF;font-size:14px;}
+        }
+        .incrise{padding:0 .4rem .3rem  .4rem;margin-bottom:10px;background-color:#fff;
+            p{text-align:left;font-size: 16px;}
+            p:first-child{height: 1.2rem;
+                line-height: 1.2rem;
+                margin-bottom: .4rem;
+                border-bottom: .5px solid #e6e6e6;}
+            .pg_item{
+                margin-bottom:10px;text-align:left;font-size:12px;
+                .lineout{width:7.6rem;
+                .linein{width:0rem;}
+                }
+                span:last-child{float: right;margin-top:6px;}
+            }
+            p:last-child{color:#999;font-size:12px;margin-top:.4rem;
+                span{margin-left:6px;color:#262626;}
+            }
+        }
+        .commoninfo{padding:.5px .4rem;margin-bottom:10px;text-align:left;background-color:#fff;
+            .title_incrise{font-size:16px;border-bottom:1px solid #e6e6e6;height:1.2rem;line-height: 1.2rem;margin-bottom:.4rem;}
+            .table p{
+                color:#999;font-size:14px;margin-bottom:.4rem;
+                span:first-child{display:inline-block;width:35%;}
+                span:last-child{display:inline-block;width:60%;color:#595959;margin-left:.4rem;text-align:left;}
+            }
+
+        }
+        #showmore{height:1rem;line-height:1rem;color:#999;}
+        .moreinfo{font-size:14px;color:#595959;/*margin-top:40px;*/margin-bottom:100px;
+            .liinfos{width:100%;background-color:#fff;border-bottom: 1px solid #e6e6e6;
+            li{display: inline-block;width:4.9rem;line-height:1rem;color:#999;}
+            .borderBottom{border-bottom: 2px solid #509FFF;color:#509fff;}
+            }
+            .moreinfos{margin-bottom:2rem;
+                .info_mi{
+                    width:50%;
+                }
+            }
+            .moreinfocontent{
+                margin-bottom:2rem;
+                .desc{padding:.4rem;background-color:#fff;text-align: left;word-break: break-all;text-indent: 1rem;}
+                table{width:100%;margin-top:10px;
+                    tr{
+                        line-height:1.33rem;
+                        height:1.33rem;
+                        background-color:#fff;
+                        color:#595959;
+                        background-color:#fff;
+                    }
+                    tr:nth-child(1){
+                        line-height:1.07rem;
+                        height:1.07rem;
+                        background-color:#f5f5f5;
+                        color:#999;
+                    }
+                tr td:nth-child(1){
+                    padding-left:.4rem;
+                    text-align: left;
+                }
+                tr td:nth-child(2){
+                    text-align: center;
+                }
+                tr td:nth-child(3){
+                    padding-right:.4rem;
+                    text-align: right;
+                }
+                }
+            }
+        }
+        .confirmBtn{position:fixed;z-index:80;bottom:0;width: 100%;line-height: 1.33rem;height: 1.33rem;font-size: 16px;color:#fff;@include gradient_blue();}
+        .darkcolor{background:#999;}
+    }

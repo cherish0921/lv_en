@@ -1,0 +1,115 @@
+@import './mixin.scss';
+@import './Personnal.scss';
+
+#usercenter {
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+#usercenter >img:first-child {
+  position:absolute;
+  z-index:91;
+  height:.45rem;
+  left:.4rem;
+  top:.4rem;
+}
+#usercenter > .logobg {
+  width: 100%;
+}
+.centername {
+  margin-top: 0.4rem;
+}
+.centername span {
+  font-size: 20px;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #509fff;
+}
+#usercenter .inputs > div {
+  margin: 0 1.07rem;
+  height: 1.46rem;
+  line-height: 1.46rem;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+  text-align: left;
+}
+#usercenter .inputs img:first-child {
+  width: 15px;
+  vertical-align: middle;
+}
+#usercenter .inputs > div input {
+  display: inline-block;
+  height: 100%;
+  line-height: 1.46rem;
+  border: 0;
+  margin-left: 0.4rem;
+  min-width: 80%;
+}
+.confirmbtn {
+  line-height: 1.33rem;
+  height: 1.33rem;
+  margin: 0.8rem 1.07rem 0 1.07rem;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 36px;
+  cursor: pointer;
+  background: -webkit-gradient(
+    linear,
+    0% 0%,
+    100% 0%,
+    from(#509fff),
+    to(#4886ff)
+  );
+  -webkit-box-shadow: 1px 1px 12px rgba(80, 159, 255, 0.5);
+  box-shadow: 1px 1px 12px rgba(80, 159, 255, 0.5);
+}
+.otheract {
+  margin: 0.4rem 1.07rem;
+  text-align: left;
+  color: #509fff;
+  cursor: pointer;
+}
+.otheract span:nth-child(1) {
+  float: right;
+  right: 1.07rem;
+}
+/*菜单五五开*/
+.asset-managerbox{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  .asset-managerboxitem{
+    width: 50%;
+    padding: 0.41rem 0px 0.41rem;
+    border-bottom: 1px solid #e5e5e5;
+    &.asset-itemnoborder{border-bottom: none;}
+  }
+}
+.asset-managerboxitem{
+  a{
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0.4rem;
+    width: 100%;
+    color: #595959;
+    font-size: 0.4rem;
+    img{
+      width: 0.51rem;
+      height: auto;
+      margin-right: 0.39rem;
+    }
+  }
+  &:nth-child(2n){
+    a{
+      border-left: 1px solid #E5E5E5;
+    }
+  }
+}

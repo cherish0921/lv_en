@@ -1,0 +1,135 @@
+#gift .header_pl{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color:#262626; 
+    background-color:#fff;
+    margin-bottom:10px;
+    text-align: center;
+}
+.headerline{height:1.17rem;line-height:1.17rem;font-size:16px;background-color:#fff;    border-bottom: 1px solid #e6e6e6;}
+.headerline img{position:absolute;left:0;height:1.17rem;z-index:91;padding:.4rem;float:left;}
+#gift{
+    position: absolute;
+    width:100%;
+    left:0;
+    top: 0;
+    padding-top: 1.2rem;
+    min-height: 700px;
+    background-color:#fff;
+    z-index:90;
+    background: #177fb4;
+    background-size:cover;
+    text-align:left;
+}
+#headbanner{width:100%;}
+.recommandsquire{
+    width: 90%;
+    margin:0.51rem 5% 1rem;
+    background-color:#fff;
+    border-radius: 0.27rem;
+    font-size:14px;
+}
+.recommandsquire.myrecommand{margin-top: 1rem;}
+.recommandsquire .squireimg{
+    position: absolute;
+    width: 90%; 
+    margin-top: -10px;
+    line-height:1rem;
+    text-align:center;
+    height:1.17rem;
+    color:#fff;
+    background: url('../../../static/images/tokensale/mykhtj.png') no-repeat;
+    background-size: auto 1.17rem;
+    background-position: center 0;
+}
+.pipes,.investlink{width:100%;padding:0 .4rem;line-height: initial;padding-top:20px;}
+.myrecommand .pipes{padding-top: 1.85rem;}
+.investlink{
+    padding:0px 0.4rem 0.7rem;
+}
+.pipes p,.investlink p{color:#999;margin-bottom:10px;}
+.pipes .haf_pipes{display:inline-block;width:49%;color:#262626;}
+.haf_pipes input{width:90px;border:1px solid #01BDB0; height: 30px;line-height: 30px;text-align: center;}
+.haf_pipes span,.investlink  span{ display: inline-block;padding-left:12px;border: 1px solid #01BDB0;font-size:16px; height: 30px;line-height: 30px;}
+.myrecommand .haf_pipes span,.myrecommand .investlink>div span{float:right;padding: 0 6px;}
+.pipes .haf_pipes:nth-child(2){float: right;}
+.myrecommand .haf_pipes:nth-child(2){padding-left: 1rem;}
+.investlink input{
+    width:80%;
+    border: 1px solid #01BDB0; 
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0px 0.27rem;
+}
+.myrecommandlist{padding-bottom:.4rem ;}
+.myrecommandlist .squireimg{background-image: url('../../../static/images/tokensale/mykhtj.png');text-align: center;}
+.myrecommandlist .pipes{margin: .4rem 0;font-size:14px;}
+.myrecommandlist .haf_pipes span{border:0;line-height:40px;color:#595959;text-align:center;background: url('../../../static/images/personnal/module7/squire1_frendicon.png') no-repeat center;background-size:contain;}
+.myrecommandlist .haf_pipes span i{color:#FF7956}
+.myrecommandlist .haf_pipes:nth-child(2) span{background-image: url('../../../static/images/personnal/module7/squire1_goldicon.png')}
+.recommandsquire.myrecommandrule .squireimg{
+    background-image: url('../../../static/images/tokensale/mykhtj.png');
+}
+.myrecommandrule .rules{padding:1rem .4rem;}
+.myrecommandrule p{
+    font-size:12px;
+    color:#595959;
+    line-height: 24px;
+    width: 100%;
+    word-break: break-all;
+}
+/*我的记录*/
+.mybonusbox{
+    padding: 1.17rem 0.4rem 0rem;
+}
+.mybonus-container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #DADDE1;
+    border-radius: 0.13rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.mybonus-container .mybonus-list{
+    width: 100%;
+    height: 1.07rem;
+    display: flex;
+    flex-direction: row;
+}
+.mybonus-container .mybonus-title{height: 0.8rem;}
+.mybonus-list .mybonus-subtit{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #DADDE1;
+    color: #262626;
+    font-size: 0.43rem;
+    font-family: "PingFang-SC-Regular";
+}
+.mybonus-list .mybonus-subtit.smalltit{font-size:0.4rem;line-height:0.4rem;}
+.mybonus-list .mybonus-subtit:first-child{
+    border-right: 1px solid #DADDE1;
+}
+.mybonus-list .mybonus-subtit:last-child{
+    color: #4988FF;
+}
+.mybonus-title .mybonus-subtit{
+    border-top: none;
+    background-color: #AED0FF;
+    font-size: 0.32rem;
+}
+.mybonus-title .mybonus-subtit:last-child{color: #262626;}
+@media (max-width:321px){
+    .pipes{line-height: 20px;}
+    .haf_pipes input{width:70px;}
+    .myrecommandlist .haf_pipes span{font-size: 12px;line-height: 30px;}
+}

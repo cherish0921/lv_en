@@ -1,0 +1,35 @@
+1.在组件的created或者mounted中使用 this.$store.dispatch('getMineBaseApi');设置初始states
+cretated=>this.$store.dispatch('action中事件名',[参数])=>vuex.action|先axios获取数据，再commit('操作名'，[参数]);
+
+//mapStates的作用是把全局的 state 和 getters 映射到当前组件的 computed 计算属性中，this.$store.state。
+//mapGetters的作用是把全局的 store中的getters 映射到当前组件的 computed 计算属性中。
+/**import { mapGetters,mapActions} from 'vuex'
+export default {
+  computed: {
+    ...mapGetters({
+      products: 'cartProducts',
+      checkoutStatus: 'checkoutStatus',
+      total: 'cartTotalPrice'
+    })
+  },
+  methods: {
+    ...mapActions(['increment', 'decrement'])
+    checkout (products) {
+      this.$store.dispatch('checkout', products)
+    }
+  }
+} */
+
+
+
+==============eslint特殊处理=======================
+1. 关闭段落校验
+/* eslint-disable */
+some code
+some code
+/* eslint-enable */
+2. 关闭当前行校验
+some code // eslint-disable-line
+3. 关闭下一行校验
+// eslint-disable-next-line
+some code

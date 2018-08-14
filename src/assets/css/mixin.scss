@@ -1,0 +1,94 @@
+$lte7:false;
+@mixin center-block ($extend:true) {
+  @if $extend {
+    @extend %center-block;
+  }
+  @else {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+%center-block {
+  @include center-block(false);
+} // inline-block
+// ie6-7 *display: inline;*zoom:1;
+@mixin inline-block ($extend:true) {
+  @if $extend {
+    @extend %inline-block;
+  }
+  @else {
+    display: inline-block;
+    @if $lte7 {
+      *display: inline;
+      *zoom: 1;
+    }
+  }
+}
+
+%inline-block {
+  @include inline-block(false);
+}
+
+@mixin float($float:left) {
+  float: $float;
+  @if $lte7 {
+    display: inline;
+  }
+}
+
+%float {
+  @include float;
+}
+
+@mixin clearfix ($extend:true) {
+  @if $extend {
+    @extend %clearfix;
+  }
+  @else {
+    @if $lte7 {
+      *zoom: 1;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+%clearfix {
+  @include clearfix(false);
+}
+
+@mixin hidden ($extend:true) {
+  @if $extend {
+    @extend %hidden;
+  }
+  @else {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+%hidden {
+  @include hidden(false);
+}
+//////////////////////////////
+@mixin bc($bc){
+  background-color: $bc;
+}
+@mixin gradient_yellow{
+  cursor: pointer;
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#FF902E), to(#FF6343));
+   // -webkit-box-shadow: 1px 1px 12px rgba(80,159,255,0.5);
+     //       box-shadow: 1px 1px 12px rgba(80,159,255,0.5)
+}
+@mixin gradient_blue{
+  cursor: pointer;
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#509fff), to(#4886FF));
+    -webkit-box-shadow: 1px 1px 12px rgba(80,159,255,0.5);
+            box-shadow: 1px 1px 12px rgba(80,159,255,0.5)
+}

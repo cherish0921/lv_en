@@ -1,0 +1,74 @@
+
+.font40{font-size: 40px;}
+.font32{font-size: 32px;}
+.font30{font-size: 30px;}
+.font22{font-size: 22px;}
+.font16{font-size: 16px;}
+.font14{font-size: 14px;}
+.font12{font-size: 12px;}
+.black_b0{background-color: #000;}
+.black_b1{background-color: #262626;}
+.black_b2{background-color: #595959;}
+.black_b4{background-color: #999;}
+.black_b5{background-color: #ccc;}
+.black_b6{background-color: #5e5e5e;}
+
+.lighter_b{background-color:#ebf4ff;}
+.darktipcolor{color: #999;}
+.titlecolor{color: #262626;}
+.maincolor{color: #595959}
+.unconfig,.basiccolor{color:#509fff;}
+.lightercolor{color:#fefefe;}
+.dangecolor{color: #FF1818;}
+button[disabled], html input[disabled],.hidePoint{cursor: default;}
+button[enabled], html input[enabled],.enabled{cursor: pointer;}
+button:disabled{background:#dddddd;}
+ul li,ol li,.login_loginregist .header-ll .basiccolor,.login_loginregist .content_ll .basiccolor,.assets-menu1 .record>.options,.assets-menu3 .record>div:last-child img,.assets-menu4 .record>div:last-child img{cursor:pointer;}
+.gradient_blue{
+    cursor: pointer;
+    background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#509fff), to(#4886FF));
+    -webkit-box-shadow:1px 1px 12px rgba(80,159,255,0.5);
+            box-shadow:1px 1px 12px rgba(80,159,255,0.5);
+}
+.gradient_fontco{display: inherit;margin-top:4px;background: -webkit-gradient(linear, left top, right top, from(#ff902e), to(#ff6343));background: linear-gradient(to right, #ff902e, #ff6343); -moz-background-clip:text;-webkit-background-clip: text; color: transparent;}
+.gradient_line{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff902e), to(#ff6343));
+}
+.gradient_font{color: #4885FF}
+.gradient_font::before{
+    content: attr(text);
+    position: absolute;
+    z-index: 10;
+    color:#509FFF;
+    mask:-webkit-gradient(linear, right top, left top, from(#4885FF), to(transparent) );
+    mask:linear-gradient(to left, #4885FF, transparent );
+}
+html,body{-webkit-font-smoothing: antialiased;font-family:Microsoft YaHei, PingFang SC,Helvetica Neue,Helvetica,Tahoma,Arial,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
+.hide{display: none!important;}
+/*vue渲染前的显示问题*/
+[v-cloak] { display: none; }
+.swiper-container{padding: 0;}
+input::-webkit-input-placeholder { font-size:14px;color:#ccc; } 
+input:-moz-placeholder { font-size:14px;color:#ccc; }
+input::-moz-placeholder { font-size:14px; color:#ccc;} 
+input:-ms-input-placeholder{font-size:14px;color:#ccc;}
+/***主页***/
+.circleloading svg { -webkit-transform: rotate(-0.05deg); transform: rotate(-0.05deg);}
+.circleloading circle{ -webkit-transition: stroke-dasharray .25s; transition: stroke-dasharray .25s;}
+.circleloadinglg{height: 140px;}
+.circleloadinglg .circleinfo{margin-top: -100px}
+.borrowin {width:280px;margin: 30px auto;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-pack: distribute;justify-content: space-around;}
+.borrowin .left .darktipcolor, .borrowin .right .darktipcolor{margin-left: 12px;line-height: 28px;}
+.borrowin .left, .borrowin .right{display: inline-block;text-align: left;color:#262626;}
+.borrowin .blueicon{ display: inline-block; width: 8px;height: 8px;background-color: #509fff;   }
+.borrowin .left .blueicon,.borrowin .right .blueicon{margin-right: 4px;}
+.commonbtn {width: 360px;color: #fff;text-align: center;border-radius: 4px;height: 48px;line-height: 48px;margin-top: 10px;}
+.market{background-color: #fff;max-width:1200px;padding-bottom:0px;margin:0 auto;}
+.market table{width: 100%;margin: 0 auto;}
+.market table tr{line-height: 72px;height:72px;border-bottom: 1px solid #e6e6e6;}
+.market table tr td{text-align: left;}
+.market table tr .rise{color: #FF6343;}
+.market table tr .fall{color: #1ECC27;}
+/***进度条**/
+.lineout{display: inline-block;width: 100px;background-color: #E5E5E5; height: 3px;  border-radius: 3px;vertical-align: bottom;}
+.linein{height: 3px;display: inline-block;border-radius: 3px;}

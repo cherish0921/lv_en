@@ -1,0 +1,41 @@
+html,body{font-family:"Microsoft YaHei"}
+
+body,p,ul,h1,h2,h3,h4,h5,h6,ol,dl,dd,form,input,ul,ol{list-style:none;font-weight:normal}
+body{background:#fff;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 Microsoft YaHei,\5b8b\4f53,arial;color:#333;outline:0;}
+img{border:0}
+a{text-decoration:none}
+a,a:hover{color:#333;}
+*{box-sizing:border-box}
+input{-webkit-appearance: none;}
+input::-webkit-inner-spin-button{-webkit-appearance:none!important;margin:0}
+input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset!important}
+a,button{cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+
+/*********水平垂直居中************/
+/*div表格布局法--IE8以下无效*/
+.parent{display: table;}
+.child{display: table-cell;vertical-align: middle;}
+.parent{display: table;}/*假借图片法--兼容性都非常好，ie6和7中有间距问题   容易影响其他的布局，导致网页布局全部瘫痪*/
+.child{display: inline-block;vertical-align: center;}/*绝对定位法--适用于所有浏览器,不需要嵌套标签    需要指定固定的高度,没有足够空间时，content */
+.content{position: absolute; top: 50%; height: 240px; margin-top: -120px;} /* 盒子本身高度的一半 */
+#content {position: absolute; top: 0; bottom: 0;left: 0; right: 0; margin: auto; height: 240px; width: 70%;}/*块级元素 已知宽高的时候使用*/
+/*清除浮动代码*/ 
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfloat{zoom:1} 

@@ -1,0 +1,246 @@
+.font11 {
+    font-size: 12px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.index {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.banner_ img {
+    width: 10rem;
+}
+
+.suggest_ {
+    width: 100%;
+    min-height:100%;
+    margin-top: .4rem;
+    overflow: auto;
+    .mint-swipe-items-wrap{
+        min-height:10rem;
+        .mint-swipe-item {
+            padding: 0 1rem;
+            border-radius: 0.27rem;
+            .header {
+                vertical-align: middle;
+                background-color: #fff;
+                .title {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    padding: 0.4rem 0;
+                    border-bottom: .5px solid #e6e6e6;
+                }
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    margin-top: -6px;
+                }
+            }
+            .circleloadinglg {
+                height: 2.975rem;
+            }
+            .circleinfo {
+                margin-top: -2.3rem;
+            }
+            .content_ {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background-color: #fff;
+                padding: 0.4rem 10%;
+        
+                p {
+                    margin-bottom: 0.4rem;
+                }
+        
+                .borrowin {
+                    width: 100%;
+                    margin: 0.4rem auto;
+                    margin-bottom: -10px;
+        
+                    .left,
+                    .borrowin {
+                        font-size: 12px;
+                        line-height: 1;
+                    }
+                }
+        
+                .commonbtn {
+                    display: inline-block;
+                    width: 5.33rem;
+                    height: 1.17rem;
+                    margin-bottom: 4px;
+                    text-align:center;
+                    line-height: 1.17rem;
+                    border-radius: 0.59rem;
+        
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.market {
+    margin-bottom: 2rem;
+
+    h3 {
+        padding: 0.4rem;
+    }
+
+    table {
+        tr {
+            color: #262626;
+            line-height: inherit;
+            height: 1.2rem;
+
+            td {
+                text-align: left;
+            }
+
+            td:first-child {
+                text-align: left;
+                padding-left: 0.53rem;
+            }
+            td:nth-child(2){
+                span {
+                    text-align: left;
+                    color:#999;
+                    display: inherit;
+                }
+            }
+            td:last-child {
+                text-align: right;
+                padding-right: 0.53rem;
+            }
+        }
+
+        .tabletitle {
+            font-size:12px;
+            tr{
+            color: #262626;
+            font-size:12px;
+        }
+        }
+
+        .show {
+            background-color: #ebf4ff;
+            height: 1.6rem;
+            td:nth-child(1),td:nth-child(2),td:nth-child(3){
+            color:#999;
+            span {
+                color:#595959;
+                display: inherit;
+            }
+         }
+         td:last-child{
+             width:3.6rem;
+            float: right; 
+        }
+        }
+    }
+}
+.market table tr:first-child td:nth-child(1), .market table tr:first-child td:nth-child(2){width:30%}
+.suggest_ .mint-swipe-indicators .mint-swipe-indicator{border: 1px solid #509fff;background-color:inherit;opacity: 1;border:1px solid #509fff;}
+.suggest_ .mint-swipe-indicators .mint-swipe-indicator.is-active{background-color:#509fff;}
+/*新增轮播部分*/
+.img-response{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.justcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myCountdownbanner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .mytokensale-index{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        top: 1.5rem;
+    }
+}
+.mytokensale-index{
+    .mytokensaletit-index{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 5.33rem;
+        }
+        .subtit-index{
+            line-height: 0.35rem;
+            margin-top: 0.3rem;
+            color: #FFFFFF;
+            font-family: "SF UI Text";
+        }
+    }
+}
+.myCountdown-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.33rem;
+}
+.myCountdown-banneritem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .Countdown-txt{
+        width: 0.88rem;
+        height: 0.88rem;
+        background: linear-gradient(to top,#4885FF,#509FFF);
+        border-radius: 0.11rem;
+        margin-bottom: 0.19rem;
+        font-size: 0.55rem;
+        color: #FFFFFF;
+    }
+    .Countdown-desc{
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 0.27rem;
+        font-weight: 300;
+        font-family: "FZLTXHK--GBK1-0";
+    }
+}
+.myCountdown-bannericon{
+    display: flex;
+    padding: 0px 0.23rem;
+    flex-direction: column;
+    height: 0.88rem;
+    align-items: center;
+    justify-content: center;
+    span{
+        display: block;
+        width: 0.08rem;
+        height: 0.08rem;
+        border-radius: 0.16rem;
+        background-color: #fff;
+        &:first-child{margin-bottom: 0.13rem;}
+    }
+}
+.Countdown-footer{
+    width: 100%;
+    margin-top: 0.25rem;
+    img{
+        width: 3.65rem;
+    }
+}

@@ -1,0 +1,51 @@
+.personnal{
+.header_pl{
+    background-color:#5ea8ff;
+    .nologin{
+     
+        img{width:2.12rem;height:2.12rem;margin:2.12rem auto 0.4rem auto;}
+        a{display:block;
+            span{display:inline-block;width:3.2rem;height:1rem;line-height:1rem; margin-bottom:.9rem;color:#fff;border:1px solid #fff;border-radius:20px;}
+        }
+    }
+    .haslogin{
+        color:#fff;
+        .userheader{line-height:.93rem;height:.93rem;font-size:16px;color:#fff;text-align:left;padding:.4rem;
+            img{vertical-align:bottom}
+            img:first-child{width:.93rem;height:.93rem;border-radius:50%;margin-right:.2rem;}
+            img:last-child{display:none;height:22px;float:right;}
+        }
+        .moneytitle{margin-top:1rem;
+            >span{line-height:.93rem;}
+            img{position:absolute;right:.4rem;width:22px;;z-index:20}
+        }
+        .moneyval{height: .84rem;margin-bottom:1.12rem;font-size:28px;}
+        .moneyother{background-color:rgba(0,0,0,.1);
+            p{display:inline-block;margin:.31rem 0px;width:49%;font-size:18px;
+            span:first-child{display:inline-block;width:100%;font-size:12px;line-height:26px;}
+            span img{margin-left: 0.2rem;height:16px;vertical-align:middle; -webkit-transform: rotate(180deg);transform: rotate(180deg)}}
+            p:first-child{border-right:1px solid #e5e5e5;}
+        }
+    }
+}
+.main_pl{
+    .asset-manager header, .account-manager header{font-size:12px;color:#999;}
+    .bigmodule table{width:100%;font-size:16px;background-color:#fff;
+        @media (max-width:376px) {
+            font-size:14px;
+        }
+        @media (max-width:321px) {
+            font-size:12px;
+        }
+
+        tr{width:100%;border-bottom:1px solid #e5e5e5;
+        td{padding-left:.4rem;text-align:left;
+        img{height:22px;vertical-align:bottom;margin-right:.4rem;}
+        }
+        td:first-child{display: block;margin:.48rem auto;border-right:1px solid #e5e5e5;}
+        }
+    }
+    .asset-manager,.account-manager{margin-top:10px}
+}
+
+}   
